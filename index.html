@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+      <div class="main-content">
+        <div class="left">
+          <h1>Movie Finder</h1>
+          <form method="POST">
+            <label for="job_title">Enter Movie or Web Series Name:</label>
+            <input type="text" name="job_title" id="job_title" placeholder="Movie or Web Series" required>
+            <button type="submit">Find It</button>
+          </form>
+        </div>
+        <div class="right">
+          {% if result %}
+          <div class="response-box">
+            <h2>Results for: <span>{{ job_title }}</span></h2>
+            <p>{{ result|safe }}</p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+</body>
+</html>
