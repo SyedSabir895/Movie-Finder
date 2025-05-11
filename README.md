@@ -1,2 +1,1 @@
-# Movie-Finder
-A movie finding website where you can search for movies and it will give the info about the movie like cast budget collection, rating a d where it is streaming.
+A movie-finding website where you can search for movies and get information about them, such as the cast, budget, box office collection, rating, and streaming platforms.
